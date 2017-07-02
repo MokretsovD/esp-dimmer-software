@@ -9,7 +9,7 @@ Follow these instructions to change the WiFi AP:
 
 2. Checkout git sources: 
 ```
-$ git clone https://github.com/tjclement/esp-dimmer-software.git
+$ git clone https://github.com/manuel-domke/esp-dimmer-software.git
 ```
 3. Download upload script to esp-dimmer-software directory and make it executable!
 ```
