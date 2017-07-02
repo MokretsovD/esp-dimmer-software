@@ -12,15 +12,12 @@ local function onRequest(connection, request)
     -- We call the handlers manually instead of neatly in a for loop,
     -- in order to save RAM. Creating tables is expensive.
     if pwmService(connection, request) then
-        connection:close()
         return
     end
     if legacyRM04(connection, request) then
-        connection:close()
         return
     end
     if webServer(connection, request) then
-        connection:close()
         return
     end
     connection:close()
